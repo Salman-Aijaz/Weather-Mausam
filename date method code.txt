@@ -1,0 +1,24 @@
+    let sunrise = weather.sys.sunrise;
+    console.log("Sunrise: ",sunrise)
+
+    let sunriseDate = new Date(sunrise*1000);
+    console.log("Sunrise Date: "+sunriseDate)
+    
+   let sunriseHours = sunriseDate.getHours();
+   console.log("Sunrise Hours: "+sunriseHours)
+
+   let sunriseMinutes = sunriseDate.getMinutes();
+   console.log("Sunrise Minutes: "+sunriseMinutes)
+    
+
+    let sunset = weather.sys.sunset;
+    console.log("Sunset ",sunset)
+
+    let sunsetDate = new Date(sunset*1000);    
+    console.log("Sunset Date: "+sunsetDate)
+  
+   let sunsetHours = sunsetDate.getHours();
+   console.log("Sunset Hours: "+sunsetHours)
+
+   let sunsetMinutes = sunsetDate.getMinutes();
+   console.log("Sunset Minutes: "+sunsetMinutes)
